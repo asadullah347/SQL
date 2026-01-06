@@ -1,0 +1,21 @@
+SQL (short for Structured Query Language) is a programming language designed to manage and retrieve data stored in databases.
+
+-- 02. SELECT
+-- SELECT  * form shows; //this will how all columns--
+
+--this just select a few of the columns--
+Select id,name, genre
+from shows;
+
+
+-- 04. Rotten Tomatoes
+-- WHERE( filter information based on a condition)
+
+
+--Select * 
+--from shows
+--where id = 23;
+
+Select * 
+from shows
+where year > 2020;
