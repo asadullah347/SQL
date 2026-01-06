@@ -1,15 +1,13 @@
 SQL (short for Structured Query Language) is a programming language designed to manage and retrieve data stored in databases.
 
--- 02. SELECT
--- SELECT  * form shows; //this will how all columns--
+---------02. SELECT * form shows; //this will how all columns--
 
 --this just select a few of the columns--
 Select id,name, genre
 from shows;
 
 
--- 04. Rotten Tomatoes
--- WHERE( filter information based on a condition)
+-------------- 04. WHERE( filter information based on a condition)
 
 
 --Select * 
@@ -21,7 +19,7 @@ from shows
 where year > 2020;
 
 
--- 05. LIKE (search for a pattern in a column.)
+----------- 05. LIKE (search for a pattern in a column.)
 
 --1. A%  values that begin with letter 'A'.
 --2. %z  values that end with 'z'.
@@ -29,3 +27,21 @@ where year > 2020;
 SELECT * 
 FROM shows 
 WHERE genre LIKE 'com%';
+
+
+
+---------- 06.ORDER BY( sorts rows of data in ascending or descending order. By default, this command sorts the data in ascending order.
+
+
+--SELECT name, genre, stream, year
+--FROM shows
+--ORDER BY year;
+
+
+--SELECT name, genre, stream, year
+--FROM shows
+--ORDER BY year DESC;
+
+Select name, genre, stream,year, tomatometer
+From shows
+Order by tomatometer DESC;
