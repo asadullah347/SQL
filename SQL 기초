@@ -19,3 +19,13 @@ from shows;
 Select * 
 from shows
 where year > 2020;
+
+
+-- 05. LIKE (search for a pattern in a column.)
+
+--1. A%  values that begin with letter 'A'.
+--2. %z  values that end with 'z'.
+
+SELECT * 
+FROM shows 
+WHERE genre LIKE 'com%';
