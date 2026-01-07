@@ -26,11 +26,11 @@ where year > 2020;
 
 SELECT * 
 FROM shows 
-WHERE genre LIKE 'com%';
+WHERE genre LIKE %com%;
 
 
 
----------- 06.ORDER BY( sorts rows of data in ascending or descending order. By default, this command sorts the data in ascending order.
+---------- 06.ORDER BY( sorts data in ascending or descending order. By default data in ascending order.)
 
 
 --SELECT name, genre, stream, year
@@ -45,3 +45,16 @@ WHERE genre LIKE 'com%';
 Select name, genre, stream,year, tomatometer
 From shows
 Order by tomatometer DESC;
+
+----------------------------------------------------------
+
+-- COUNT(): returns the number of rows
+-- MAX(): returns the largest value in a column.
+-- MIN(): returns the smallest value in a column.
+-- SUM(): returns the total sum in a column.
+-- AVG(): returns the average value in a column.
+
+
+
+
+
