@@ -54,6 +54,9 @@ Order by tomatometer DESC;
 -- SUM(): returns the total sum in a column.
 -- AVG(): returns the average value in a column.
 
+--GROUP BY: groups rows of data with the same values into buckets.
+
+
 
 
 
