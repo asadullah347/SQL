@@ -56,6 +56,23 @@ Order by tomatometer DESC;
 
 --GROUP BY: groups rows of data with the same values into buckets.
 
+=========================================================================
+-------- Quiz
+
+--Q1. What is the most popular game in the list?
+SELECT title, Max(players)
+FROM games;
+
+--Q2. What are the counts of all the programming languages?
+Select title, Count(language)
+From games
+GROUP BY language;
+
+--Q3.What are the average Metascores for each of the genres?
+SELECT genre, AVG(metascore)
+FROM games
+GROUP BY genre;
+
 
 
 
